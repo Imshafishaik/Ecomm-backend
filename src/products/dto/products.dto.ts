@@ -10,6 +10,14 @@ export class ProductsDto{
     description: string;
 
     @IsNotEmpty()
+    @IsString()
+    quantity: string;
+
+    @IsNotEmpty()
     @IsNumber()
     price: number;
+
+    @IsNotEmpty()
+    @IsString()
+    subcategoryId: string;
 }

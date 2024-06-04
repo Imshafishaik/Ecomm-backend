@@ -10,4 +10,8 @@ export class SubCategoryDto{
     @IsNotEmpty()
     @IsString()
     name: string;
+
+    @IsNotEmpty()
+    @IsString()
+    categoryId: string;
 }
