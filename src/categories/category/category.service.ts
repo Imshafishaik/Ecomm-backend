@@ -11,7 +11,6 @@ export class CatergoryService{
 
     async getAllMainCategory(){
         const categoryData = await this.CategoryModel.find();
-        console.log(".............categoryData",categoryData)
         return {
             data: categoryData
         };
